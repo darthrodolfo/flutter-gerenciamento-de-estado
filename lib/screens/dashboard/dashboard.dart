@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bytebank/components/saldo.dart';
 
 class Dashboard extends StatelessWidget {
   @override
@@ -7,7 +8,10 @@ class Dashboard extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Bytebank'),
       ),
-      body: Text('40.00'),
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: Saldo(),
+      ),
     );
   }
 }
